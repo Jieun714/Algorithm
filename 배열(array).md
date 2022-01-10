@@ -1,3 +1,6 @@
+
+# 배열(Array)
+
 - **배열 초기화**
 
 ```java
@@ -15,16 +18,16 @@ int[] arr3 = {1,2,3,4,5};
 
 - **foreach : 향상된 for문**
 
-- - 더욱 직관적, 오류 가능성 낮춤.
+  - 더욱 직관적, 오류 가능성 낮춤.
   - 첨자 변자 대신 배열의 요소를 저장할 변수를 선언하고, : 과 함께 순회할 배열의 참조 변수를 선언
   - 배열의 연산으로 특정 위치에 값을 삽입, 삭제하거나 값을 읽어오는 경우, 사용 불가
     ex) for(int nums : students)  ...
 
+
 - **Random**
 
-- - nextInt(ARRAY_LENGTH) - 난수 생성
-
-  - - ARRAY_LENGTH는 난수의 범위를 지정. 만약 100이면 0~99까지의 난수
+  - nextInt(ARRAY_LENGTH) - 난수 생성
+    - ARRAY_LENGTH는 난수의 범위를 지정. 만약 100이면 0~99까지의 난수
 
 
 
@@ -79,30 +82,25 @@ public class randomEx_2 {
 
 - **배열 복사 메서드**
 
-- 1. clone()
+  1. clone()
 
   2. System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
+     - 5개의 인자(parameter)
+       - 원본 배열 객체, 원본 배열에서 복사할 시작점, 사본 배열 객체, 사본 배열에서 복사할 시작점, 원본 배열의 요소를 복사할 개수
 
-  3. - 5개의 인자(parameter)
+  3. Arrays.copyOf(...)
+     - 2개의 인수(argument)
+       - 복사할 객체, 복사할 크기
 
-     - - 원본 배열 객체, 원본 배열에서 복사할 시작점, 사본 배열 객체, 사본 배열에서 복사할 시작점, 원본 배열의 요소를 복사할 개수
+  4. Arrays.copyRange(...)
+     - 3개의 인수
+       - 복사할 객체, 복사할 시작점, 복사할 끝 점
 
-  4. Arrays.copyOf(...)
 
-  5. - 2개의 인수(argument)
-
-     - - 복사할 객체, 복사할 크기
-
-  6. Arrays.copyRange(...)
-
-  7. - 3개의 인수
-
-     - - 복사할 객체, 복사할 시작점, 복사할 끝 점
 
 - **다중 배열**
 
-- - 2차원 배열 구구단
-
+  - 2차원 배열 구구단
 
 
 ```java
